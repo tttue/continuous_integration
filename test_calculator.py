@@ -11,7 +11,10 @@ class TestCalculator:
     def test_addition(self):
         """test_addition
         """
-        assert 5 == calculator.add(2, 2)
+        assert None == calculator.add(None, 2)
+        assert None == calculator.add(2, None)
+        assert None == calculator.add()
+        assert 4 == calculator.add(2, 2)
 
     def test_subtraction(self):
         """test_subtraction
